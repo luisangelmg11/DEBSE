@@ -60,7 +60,7 @@ void loop() {
   display.print("Humedad: "); display.print(h,0); display.println("%");
   
   // Lógica de control
-  if (t > 30) {              // Umbral alto (ajusta a tu gusto)
+  if (t > 30) {              // Umbral alto
     digitalWrite(LED_VERDE, LOW);
     digitalWrite(LED_ROJO, HIGH);
     tone(BUZZER, 800, 500);   // Pitido
